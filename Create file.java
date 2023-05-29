@@ -5,7 +5,7 @@ class Creation
 	{
 		try
 		{
-			File f1=new File("C:\\Users\\student\\Desktop\\Hello.txxt");
+			File f1=new File("C:\\Users\\student\\Desktop\\Hello.txt");
 			if(f1.createNewFile())
 			{
 				System.out.println("File "+f1.getName()+" is created");
