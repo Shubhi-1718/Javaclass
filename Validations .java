@@ -14,15 +14,16 @@ class Customer
 	private String category;
 	Customer(String custNo,String custName,String category) throws InvalidInputException 
 	{
+		this.custNo=custNo;
+		this.custName=custName;
+		this.category=category;
 		if(!custNo.startsWith("C") && !custNo.startsWith("c"))
 			throw new InvalidInputException("Invalid customer Number");
 		if(custName.length()<4)
 			throw new InvalidInputException("Invalid customer Name");
 		if(!category.equals("Platinum") && !category.equals("Gold") && !category.equals("Silver"))
 			throw new InvalidInputException("Invalid category");
-		this.custNo=custNo;
-		this.custName=custName;
-		this.category=category;
+		
 	}
 	String getcustno()
 	{
