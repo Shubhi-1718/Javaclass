@@ -1,0 +1,22 @@
+class Sum
+{
+	void cal(int num1, int num2)
+	{
+		int s= num1+num2;
+		System.out.printf("Sum=%d",s);
+	}
+}
+public class CommandLine
+{
+	public static void main(String args[])
+	{
+	if(args.length==2)
+	{
+		int num1=Integer.parseInt(args[0]);
+		int num2=Integer.parseInt(args[1]);
+		new Sum().cal(num1, num2);
+	}
+	else
+		System.out.println("Provide arguments ");
+	}
+}
