@@ -1,4 +1,4 @@
-package pratyush;
+
 import java.util.*;
 class InvalidInputException extends Exception
 {
