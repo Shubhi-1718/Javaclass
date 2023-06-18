@@ -1,4 +1,4 @@
-class Userdefined 
+class Userdefined extends Exception
 {
 	public static void method(int age)
 	{
